@@ -38,8 +38,10 @@ function placeTransition() {
 // recalculate when resized
 window.onresize = placeTransition
 
-// run initially
-placeTransition()
+window.addEventListener("load", function () {
+  // run initially
+  placeTransition()
+})
 
 /* Manage Placement of Cursor */
 
